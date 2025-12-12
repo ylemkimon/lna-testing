@@ -102,7 +102,7 @@ fetchForm.addEventListener("submit", (event) => {
     if (fetchTargetAddressSpace.value != "n/a") {
         fetchOptions["targetAddressSpace"] = fetchTargetAddressSpace.value;
     }
-    if (fetchMethod.value == "POST") {
+    if (fetchMethod.value == "post" || fetchMethod.value == "put") {
         fetchOptions["body"] = fetchBody.value;
     }
     if (fetchHeaders.value) {
